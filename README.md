@@ -10,7 +10,7 @@ Practicing jenkins.
 
 ## Features
 
-- multitype branch pipline.
+- multi branch pipline.
 - building app with maven tool.
 - dockerize the app.
 - push the image to dockerhub.
