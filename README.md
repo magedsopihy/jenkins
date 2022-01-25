@@ -11,9 +11,9 @@ Practicing jenkins.
 ## Features
 
 - multi branch pipline.
-- building app with maven tool.
-- dockerize the app.
-- push the image to dockerhub.
+- seperate the logic in separate script file (main branch).
+- execute steps conditionally (feature/follow brach).
+- seperate the repated logic in a shared library and configure it to be accessible in all jenkins jobs (jenkins-shared-lib branch).
 
 
 ---
