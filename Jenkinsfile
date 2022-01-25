@@ -5,6 +5,7 @@ pipeline {
     tools {
         maven "Maven"
     }
+   
     stages {
         stage("init"){
             steps {
@@ -13,8 +14,6 @@ pipeline {
                 }
             }
         }
-
-    stages {
         stage("build jar"){
             steps {
                 script {
@@ -24,13 +23,13 @@ pipeline {
         }
 
         stage("build image"){
-                steps {
-                    script {
-                       gv.buildImage()
-                    }
-                    }
+            steps {
+                script {
+                    gv.buildImage()
                 }
             }
+        }
+            
 
         stage("deploy"){
             steps{
