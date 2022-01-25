@@ -28,7 +28,7 @@ pipeline {
         stage("build image"){
             steps {
                 script {
-                    buildImage()
+                    buildImage 'magedsopihy/maven_project:2.0'
                 }
             }
         }
